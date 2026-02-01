@@ -1,38 +1,73 @@
-# IDE and Editor files
+# Executable files - NEVER TRACK
+*.exe
+*.out
+*.o
+*.obj
+*.class
+*.pyc
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+**/*.exe
+**/*.out
+**/*.o
+**/*.obj
+**/*.class
+**/*.pyc
+**/*.so
+**/*.dll
+**/*.dylib
+**/*.a
+**/*.lib
+
+# Build/Output directories
+output/
+build/
+dist/
+bin/
+obj/
+
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-.DS_Store
+*.code-workspace
+**/.vscode/
+**/.idea/
 
-# Compiled files
-*.exe
-*.out
-*.o
-*.class
-*.pyc
+# Python
 __pycache__/
-*.so
-
-# Language specific
-node_modules/
 venv/
 env/
 .venv/
-*.log
-dist/
-build/
+**/__pycache__/
+**/venv/
+**/env/
+**/.venv/
 
-# OS generated files
-Thumbs.db
+# Node
+node_modules/
+**/node_modules/
+
+# OS files
 .DS_Store
+Thumbs.db
 *.bak
+*.tmp
+*.temp
+**/.DS_Store
+**/Thumbs.db
 
-# Test files (if you want to keep test files local)
-# *_test.*
-# test_*
+# Logs
+*.log
+**/*.log
 
-# Personal notes
+# Personal files
 notes.txt
 TODO.txt
+scratch.txt
+scratch.*
