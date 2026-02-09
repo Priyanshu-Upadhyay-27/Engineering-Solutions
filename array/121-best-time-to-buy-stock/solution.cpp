@@ -19,7 +19,7 @@ int main() {
     Solution sol;
     int maximum_profit;
 
-    vector<int> prices = {7,1,5,3,6,4};
+    vector<int> prices = {7, 6, 4, 3, 1};
 
     maximum_profit = sol.maxProfit(prices);
 
