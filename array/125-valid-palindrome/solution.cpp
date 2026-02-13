@@ -29,9 +29,10 @@ public:
 
 int main(){
     Solution sol;
-    string T1 = "race a car";
+    string T1 = "race car";
+    string T2 = "A man, a plan, a canal: Panama";
     bool ans;
-    ans = sol.isPalindrome(T1);
+    ans = sol.isPalindrome(T2);
     cout<<boolalpha;
     cout<<"Given String is a palindrome :"<<ans;
 }
