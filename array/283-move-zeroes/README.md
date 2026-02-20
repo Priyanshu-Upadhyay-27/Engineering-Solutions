@@ -6,7 +6,7 @@
 ## Approach
 I have used and learnt two pointer approach with it's variation called fast and slow pointers.
 
-![Solution](./243-notes.jpeg)
+![Solution](./283-notes.jpeg)
 
 ---
 
