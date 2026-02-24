@@ -34,5 +34,4 @@ int main(){
     cout<<"Objects after sorting : "<<endl;
     for(auto i: nums) cout<<i<<" ";
     cout<<endl;
-
 }
