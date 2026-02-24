@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        if (intervals.empty()) return {}; // Safety check for empty input
+        if (intervals.empty()) return {}; 
         
         vector<vector<int>> result;
         sort(intervals.begin(), intervals.end());
