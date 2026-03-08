@@ -23,7 +23,7 @@ int main(){
     vector<int>test2 = {3,2,2,3};
     int element2 = 3;
     int k = sol.removeElement(test1, element1);
-    cout<<"Number of Unique Elements in the array after removing the element :"<<k<<endl;
+    cout<<"Number of Elements in the array after removing the particular element :"<<k<<endl;
     cout<<"Now the array after removing that element : ";
     for(int i = 0; i < k; i++) cout<<test1[i]<<" ";
 }
