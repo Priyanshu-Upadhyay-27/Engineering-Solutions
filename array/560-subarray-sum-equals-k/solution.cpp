@@ -37,6 +37,10 @@ int main() {
     cout << "Test Case 1: {1, 1, 1}, k = 2" << endl;
     cout << "Expected: 2, Result: " << sol.subarraySum(nums1, k1) << endl;
 
+    vector<int> nums2 = {3, 4, 7, 2, -3, 1, 4, 2};
+    int k2 = 7;
+    cout << "\nTest Case 2: {3, 4, 7, 2, -3, 1, 4, 2}, k = 7" << endl;
+    cout << "Expected: 4, Result: " << sol.subarraySum(nums2, k2) << endl;
 
     return 0;
 }
