@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     vector<int> getRow(int rowIndex) {
@@ -16,3 +19,21 @@ public:
         
     }
 };
+
+int main() {
+    // Instantiate the class (Create an object)
+    Solution mySolver;
+
+    int targetRow = 4;
+
+    vector<int> result = mySolver.getRow(targetRow);
+
+    cout << "Row " << targetRow << " is: [";
+    for (int i = 0; i < result.size(); i++) {
+        cout << result[i];
+        if (i < result.size() - 1) cout << ", "; 
+    }
+    cout << "]" << endl;
+
+    return 0; 
+}
