@@ -3,6 +3,7 @@
 **Difficulty:** Medium
 
 ## Approach
+It includes using recursion at two parts, One divides the array into smaller subarray, and to add the new element, we will divide the rest subarray till length is zero or till the left out element is greater than the last element. 
 
 
 ---
@@ -11,4 +12,4 @@
 **Space Complexity:** O(N)
 
 ## Key Learning
-In earlier problems, if you needed to search an array, you physically built the array in memory and looped through it. This problem teaches you that if the data follows strict mathematical rules, you don't need to build it to search it.You effectively performed a Binary Search on a massive tree that didn't actually exist anywhere except in your algorithm's logic. By using math (K and mid) to act as a GPS, you navigated a "virtual" search space. This is a master-level optimization technique. Whenever an interviewer gives you a problem where the data grows exponentially (like 2^N), your first thought should now be: "Can I find the answer mathematically without actually generating the data?"
+The biggest takeaway here is realizing that recursive in-place modification is a myth when it comes to Space Complexity.If an interviewer hands you an array problem and says, "Solve this in $O(1)$ auxiliary space," you cannot use recursion. Even if you don't create new variables, the call stack itself is considered auxiliary space. You would be forced to use an iterative while loop with two pointers to achieve true $O(1)$ space.Recursion is beautiful for logic, but it always charges a memory tax!
