@@ -2,7 +2,7 @@
 using namespace std;
 
 void insertRight(stack<int> st, int el){
-
+    
 }
 
 void sortStack(stack<int>unsortedStack){
