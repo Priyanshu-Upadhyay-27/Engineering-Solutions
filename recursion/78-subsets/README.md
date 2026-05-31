@@ -4,7 +4,7 @@
 **Difficulty:** Medium
 
 ## Approach
-It can be solved easily using
+It can be solved easily using recursion first and then back tracking and it cna be solved using string manipulation too.
 
 ![Solution](./XXX-notes.jpg)
 
@@ -14,4 +14,4 @@ It can be solved easily using
 **Space Complexity:** O(?)
 
 ## Key Learning
-Main takeaway or important concept from this problem.
+Tree is most significant and first drawing tree does the 90% work. 
