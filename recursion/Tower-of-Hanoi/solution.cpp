@@ -3,12 +3,13 @@ using namespace std;
 
 void solve(int s, int d, int h, int n, int& count){
     if(n == 1){
-        cout<< "Step " << count << ":"<<"Moving "<<n<<" plates from tower "<<s<<" to tower "<<d<<endl;
+        count++;
+        cout<< "Step " << count << ":"<<"Moving plate"<<n<<"  from tower "<<s<<" to tower "<<d<<endl;
         return;
     }
     solve(s, h, d, n - 1, count);
     count++;
-    cout<< "Step " << count << ":"<<"Moving "<<n<<" plates from tower "<<s<<" to tower "<<d<<endl;
+    cout<< "Step " << count << ":"<<"Moving plate"<<n<<" from tower "<<s<<" to tower "<<d<<endl;
     solve(h, d, s, n - 1, count);
 }
 
