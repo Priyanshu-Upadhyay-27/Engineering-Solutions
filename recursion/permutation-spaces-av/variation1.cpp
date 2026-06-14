@@ -19,6 +19,6 @@ int main(){
     string ip;
     cout<<"Enter the input string: ";
     cin>>ip;
-    string op =" ";
-    solve(ip, op);
+    string op =" " ;
+    solve(ip, op) ;
 }
