@@ -4,13 +4,13 @@
 **Difficulty:** Easy
 
 ## Approach
-Brief one-line approach description.
+Here just you need to check which element is a number or a digit and need to apply that second number finding logic. So we will first defined first and second with a smaller value, then parse number one by one and check if its the largest then put it in the first and put the first in the second, if its less then first and greater then second then update the second.
 
 
 ---
 
-**Time Complexity:** O(?)  
-**Space Complexity:** O(?)
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
 
 ## Key Learning
-Main takeaway or important concept from this problem.
+Stoi is used to convert string to integer.

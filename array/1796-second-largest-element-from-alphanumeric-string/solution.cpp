@@ -24,8 +24,9 @@ public:
 
 int main() {
     Solution sol;
-
-    
-
+    string s = "dfa1245321afd";
+    int second_largest;
+    second_largest = sol.secondHighest(s);
+    cout<<"Second Highest Element is:"<<second_largest<<endl;
     return 0;
 }
