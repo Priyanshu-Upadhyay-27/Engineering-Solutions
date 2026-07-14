@@ -13,7 +13,7 @@ void merge(vector<int>& nums, int left, int mid, int right) {
         }
         else{
             temp.push_back(nums[j]);
-            i++;
+            j++;
         }
     }
     while(i <= mid){
@@ -28,4 +28,22 @@ void merge(vector<int>& nums, int left, int mid, int right) {
     for (int k = left; k <= right; k++) {
         nums[k] = temp[k - left];
     }
+}
+
+void mergeSort(vector<int>& nums, int left, int right) {
+    if (left >= right) {
+        return;
+    }
+    int mid = left + (right - left)/2;
+    mergeSort(nums, left, mid);
+    mergeSort(nums, mid + 1, right);
+    merge(nums, left, mid, right);
+}
+
+int main(){
+    vector<int>arr1 = {7,30,7,0,55,2,9,34,6};
+    int left = 0;
+    int right = arr1.size() - 1;
+    mergeSort(arr1, left, right);
+    for(auto i: arr1) cout<<i<<" ";
 }
