@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
 using namespace std;
 
 int partitionIndex(vector<int>& nums, int left, int right){
