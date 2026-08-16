@@ -34,7 +34,5 @@ int main(){
     vector<int>test2 = {4,2,0,3,2,5};
     int element2 = 3;
     int k = sol.trap(test1);
-    cout<<"Number of Elements in the array after removing the particular element :"<<k<<endl;
-    cout<<"Now the array after removing that element : ";
-    for(int i = 0; i < k; i++) cout<<test1[i]<<" ";
+    cout<<"Amount of water trapped in the blocks :"<<k<<endl;
 }
