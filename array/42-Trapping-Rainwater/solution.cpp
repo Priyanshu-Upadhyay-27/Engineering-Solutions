@@ -29,10 +29,8 @@ public:
 
 int main(){
     Solution sol;
-    vector<int> test1 = {0,2,0,3,1,0,1,3,2,1};
-    int element1 = 2;
-    vector<int>test2 = {4,2,0,3,2,5};
-    int element2 = 3;
+    vector<int> test1 = {0,2,0,3,1,0,1,3,2,1}; // output: 9
+    vector<int>test2 = {4,2,0,3,2,5}; // output: 9
     int k = sol.trap(test1);
     cout<<"Amount of water trapped in the blocks :"<<k<<endl;
 }
