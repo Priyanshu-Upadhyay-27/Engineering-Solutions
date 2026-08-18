@@ -23,5 +23,8 @@ public:
 
 int main(){
     Solution sol;
-    string s1 = "";
+    string s1 = "abcabcbb";
+    string s2 = "pwwkew";
+    int len = sol.lengthOfLongestSubstring(s1);
+    cout<<"Length Of longest common substring is: "<<len<<endl;
 }
