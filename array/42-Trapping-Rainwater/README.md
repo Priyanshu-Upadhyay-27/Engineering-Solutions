@@ -11,3 +11,14 @@ We need to look at it from different pov. I was last time commign solving the ma
 
 ---
 
+**Time Complexity:** O(n)  
+**Space Complexity:** O(n)
+
+## Key Learning
+Pattern Recogniton and looking it from different pov.
+
+## Mistakes
+Just come to this after solving maximum rainwater problem, so the mindset was to calculate the whole area and substract the hard block area later.
+Not using leftmax and rightmax variables, doing all the work usig moving pointers only.
+Getting confused between i and height[i], silly mistake, but getting problem. 
+Making the pointer move from start and start + 1, and jumping i directly to j after calculating the area, but later understood, to use either j or i, for that particular iteration on the smaller side.
