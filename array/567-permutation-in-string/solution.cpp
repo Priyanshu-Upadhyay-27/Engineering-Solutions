@@ -35,7 +35,19 @@ public:
 int main() {
     Solution sol;
     
+    // Test case 1: Expected output -> true (matches "ba" inside "eidba...")
+    string s1_a = "ab";
+    string s2_a = "eidbaooo";
+    cout << "Test 1 (\"" << s1_a << "\", \"" << s2_a << "\"): "
+         << (sol.checkInclusion(s1_a, s2_a) ? "true" : "false") 
+         << " (expected: true)" << endl;
     
+    // Test case 2: Expected output -> false (no permutation of "ab" exists in "eidboaoo")
+    string s1_b = "ab";
+    string s2_b = "eidboaoo";
+    cout << "Test 2 (\"" << s1_b << "\", \"" << s2_b << "\"): "
+         << (sol.checkInclusion(s1_b, s2_b) ? "true" : "false") 
+         << " (expected: false)" << endl;
     
     return 0;
 }
