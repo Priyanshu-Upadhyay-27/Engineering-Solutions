@@ -44,3 +44,4 @@ def insert_tail(head, new_val):
 
 n0 = insert_tail(n0, 40)
 print_LL(n0)
+
