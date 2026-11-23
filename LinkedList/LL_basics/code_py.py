@@ -45,3 +45,26 @@ def insert_tail(head, new_val):
 n0 = insert_tail(n0, 40)
 print_LL(n0)
 
+def length(head):
+    curr = head 
+    count = 0
+    while curr is not None:
+        curr = curr.ptr
+        count += 1
+
+    return count
+
+def search(head, key):
+    curr = head
+    count = 0
+    while curr is not None:
+        if curr.val == key:
+            return count
+        curr = curr.ptr
+        count += 1
+
+    return False
+
+len = length(n0)
+key_index = search(n0, 20)
+print(f"Length of the Linked List: {len}, Key Index: {key_index}")
