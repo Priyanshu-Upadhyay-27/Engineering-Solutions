@@ -20,3 +20,27 @@ def print_LL(head):
     print()
 
 print_LL(n1)
+
+def insert_head(head, new_val):
+    new_head = Node(new_val)
+    new_head.ptr = head
+    return new_head
+
+n0 = insert_head(n1, 5)
+
+print_LL(n0)
+
+
+def insert_tail(head, new_val):
+    curr = head
+    new = Node(new_val)
+    if head is None:
+        return new
+    while curr.ptr is not None:
+        curr = curr.ptr
+
+    curr.ptr = new
+    return head
+
+n0 = insert_tail(n0, 40)
+print_LL(n0)
