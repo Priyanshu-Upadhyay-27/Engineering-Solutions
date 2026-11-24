@@ -85,7 +85,8 @@ def delete_node(head, valD): # this function delete a node, from any part of the
         return head.ptr
     
     while curr.ptr is not None: # traversal till end node, not pass through it
-        if curr.ptr.val == valD: # we are on current node and if we found that the next node 
+        if curr.ptr.val == valD: # we are on current node and if we found that the next node
+            # Each . means "follow this name into the object, and take what is stored there." 
             curr.ptr = curr.ptr.ptr # then we just repoint the arrow of current node to the next to next node
             curr.ptr.ptr = None # optional: rewiring the the next to next pointing to none, so that pointer doesnt point in our LL
             break
