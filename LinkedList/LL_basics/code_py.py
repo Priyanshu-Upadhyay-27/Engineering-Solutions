@@ -109,5 +109,5 @@ def reverse_LL(head): # function to reverse linked list, just reversing the arro
         nxt = curr.ptr # first store the initial pointing from curr to the next node 
         curr.ptr = prev # now reassign the initial pointing to None for the first iteration, and later, it contains the previous node or the intial node pointing.
         prev = curr # now just update the prev to current as for the next iter, it will be a previous node
-        curr = nxt # since 
+        curr = nxt # since nxt is curr.ptr, therefore now curr moves to the next node.
 
