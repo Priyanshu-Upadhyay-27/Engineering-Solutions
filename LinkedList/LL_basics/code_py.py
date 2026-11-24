@@ -97,3 +97,17 @@ n0 = delete_node(n0, 20)
 print("New list after deletion: ")
 print_LL(n0)
 
+n0 = insert_head(n0, 1)
+n0 = insert_tail(n0, 40)
+print_LL(n0)
+
+def reverse_LL(head): # function to reverse linked list, just reversing the arrows direction.
+    curr = head 
+    prev = None # using two variables for swapping the direction. 
+    nxt = None
+    while curr is not None:
+        nxt = curr.ptr # first store the initial pointing from curr to the next node 
+        curr.ptr = prev # now reassign the initial pointing to None for the first iteration, and later, it contains the previous node or the intial node pointing.
+        prev = curr # now just update the prev to current as for the next iter, it will be a previous node
+        curr = nxt # since 
+
